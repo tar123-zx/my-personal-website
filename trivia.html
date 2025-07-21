@@ -18,8 +18,10 @@
     <a href="trivia.html">Trivia</a>
   </nav>
 
-  <main>
-    <aside class="left">
+  <!-- FIXED LAYOUT -->
+  <main style="display: flex; align-items: flex-start;">
+    <!-- Left Sidebar -->
+    <aside class="left" style="width: 20%; padding: 20px;">
       <h3>Useful Links</h3>
       <ul>
         <li><a href="https://www.skysports.com/" target="_blank">Sky Sports</a></li>
@@ -28,31 +30,32 @@
       </ul>
     </aside>
 
-    <section class="content">
+    <!-- Center Content -->
+    <section class="content" style="width: 60%; padding: 20px;">
       <h2>Sports Trivia</h2>
       <form id="trivia-form">
         <p><strong>1. How many players are there in a football (soccer) team on the field?</strong></p>
         <label><input type="radio" name="q1" value="a"> 9</label><br>
         <label><input type="radio" name="q1" value="b"> 11</label><br>
-        <label><input type="radio" name="q1" value="c"> 13</label><br>
+        <label><input type="radio" name="q1" value="c"> 13</label><br><br>
 
         <p><strong>2. Which country has won the most FIFA World Cups?</strong></p>
         <label><input type="radio" name="q2" value="a"> Brazil</label><br>
         <label><input type="radio" name="q2" value="b"> Germany</label><br>
-        <label><input type="radio" name="q2" value="c"> Argentina</label><br>
+        <label><input type="radio" name="q2" value="c"> Argentina</label><br><br>
 
         <p><strong>3. In badminton, how many points are needed to win a game?</strong></p>
         <label><input type="radio" name="q3" value="a"> 15</label><br>
         <label><input type="radio" name="q3" value="b"> 25</label><br>
-        <label><input type="radio" name="q3" value="c"> 21</label><br>
+        <label><input type="radio" name="q3" value="c"> 21</label><br><br>
 
-        <br>
         <button type="submit">Check Answers</button>
       </form>
       <p id="result" style="font-weight: bold; margin-top: 10px;"></p>
     </section>
 
-    <aside class="right">
+    <!-- Right Sidebar -->
+    <aside class="right" style="width: 20%; padding: 20px;">
       <h3>Contact Me</h3>
       <form>
         <label>Name: <input type="text"></label><br>
