@@ -1,0 +1,71 @@
+<!-- trivia.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="trivia.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Tarun's Sports Website</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <main>
+    <aside class="left">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://www.skysports.com/" target="_blank">Sky Sports</a></li>
+        <li><a href="https://www.bbc.com/sport/" target="_blank">BBC Sports</a></li>
+        <li><a href="https://global.espn.com/" target="_blank">ESPN Sports</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <h2>Sports Trivia</h2>
+      <form id="trivia-form">
+        <p><strong>1. How many players are there in a football (soccer) team on the field?</strong></p>
+        <label><input type="radio" name="q1" value="a"> 9</label><br>
+        <label><input type="radio" name="q1" value="b"> 11</label><br>
+        <label><input type="radio" name="q1" value="c"> 13</label><br>
+
+        <p><strong>2. Which country has won the most FIFA World Cups?</strong></p>
+        <label><input type="radio" name="q2" value="a"> Brazil</label><br>
+        <label><input type="radio" name="q2" value="b"> Germany</label><br>
+        <label><input type="radio" name="q2" value="c"> Argentina</label><br>
+
+        <p><strong>3. In badminton, how many points are needed to win a game?</strong></p>
+        <label><input type="radio" name="q3" value="a"> 15</label><br>
+        <label><input type="radio" name="q3" value="b"> 25</label><br>
+        <label><input type="radio" name="q3" value="c"> 21</label><br>
+
+        <br>
+        <button type="submit">Check Answers</button>
+      </form>
+      <p id="result" style="font-weight: bold; margin-top: 10px;"></p>
+    </section>
+
+    <aside class="right">
+      <h3>Contact Me</h3>
+      <form>
+        <label>Name: <input type="text"></label><br>
+        <label>Email: <input type="email"></label><br>
+        <label>Message:<br><textarea rows="4" cols="20"></textarea></label><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Created on July 2025 | <a href="https://github.com/tarunponnuswamy">GitHub</a></p>
+  </footer>
+</body>
+</html>
